@@ -1,0 +1,120 @@
+/* 기본 스타일 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;   
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 메인 콘텐츠 스타일 */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* 웹툰 그리드 스타일 */
+.webtoon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.webtoon-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.webtoon-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.webtoon-item h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.webtoon-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 요일별 목록 스타일 */
+.day-list {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.day-list li {
+    margin-right: 1rem;
+}
+
+.day-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .webtoon-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
