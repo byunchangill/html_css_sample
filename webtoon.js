@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 추후 DB 연결시 DB 데이터를 가져올 예정
     const webtoons = {
         monday: [
-            { title: '월요일 웹툰 1', author: '작가 1', image: 'monday-webtoon1.jpg' },
+            { title: '월요일 웹툰 1', author: '작가 1', image: './imgs/webtoon.png' },
             { title: '월요일 웹툰 2', author: '작가 2', image: 'monday-webtoon2.jpg' }
         ],
         tuesday: [
