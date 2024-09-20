@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 웹툰을 표시할 컨테이너 요소 선택
     const container = document.getElementById('webtoon-container');
     // 요일 링크 요소들 선택
-    const dayLinks = document.querySelectorAll('.day-list a');
+    const dayLinks = document.querySelectorAll('.day-link');
 
     // 특정 요일의 웹툰을 표시하는 함수
     function showWebtoons(day) {
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             // 기본 링크 동작 방지
             e.preventDefault();
-            // 클릭된 링크의 data-day 속성 값 가져오기
-            const day = this.getAttribute('data-day');
+            // 클릭된 링크의 id 값 가져오기 (요일)
+            const day = this.id;
             // 해당 요일의 웹툰 표시
             showWebtoons(day);
         });
